@@ -7,12 +7,12 @@ public class LinkedList {
 
     public String toString() {
         Node current = head;
-        StringBuilder sBuilder = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         while (current != null) {
-            sBuilder.append(current.getItem()).append(" ");
+            sb.append(current.getItem()).append(" ");
             current = current.getNext();
         }
-        return sBuilder.toString();
+        return sb.toString();
     }
 
     public String reverseList() {
